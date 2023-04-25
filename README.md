@@ -1,3 +1,4 @@
 # Bash
 Bash commands and scripts
-## Blablabla
+## Посмотреть где я:
+> pwd
