@@ -25,7 +25,7 @@ Bash commands and scripts
 ### Выйти из папки на уровень выше
         cd ../
 ### Переместить 2 файла в другую папку
-     mv {text1.txt,text2.txt} Inner_Folder1
+        mv {text1.txt,text2.txt} Inner_Folder1
 ### Скопировать любые 2 файла в любую другую папку
         cp {json1.json,json2.json} Inner_Folder2
 ### Найти файл по имени
