@@ -19,9 +19,9 @@ Bash commands and scripts
 ### Открыть любой txt файл
      vim text1.txt
 #### написать туда что-нибудь, любой текст
-#####(Hello world!)
+##### (Hello world!)
 #### сохранить и выйти
-#####Press ESC, then execute :wq
+##### Press ESC, then execute :wq
 ### Выйти из папки на уровень выше
         cd ../
 ### Переместить 2 файла в другую папку
