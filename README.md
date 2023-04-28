@@ -1,13 +1,13 @@
 # Bash
 Bash commands and scripts
 ### Посмотреть где я:
-> pwd
+>    pwd
 ### Создать папку (Test_Folder):
-> mkdir Test_Folder
+>    mkdir Test_Folder
 ### Перейти в созданную папку :
-> cd Test_Folder
+>     cd Test_Folder
 ### Создать 3 папки (F1, F2, F3):
-> mkdir F1 F2 F3
+>     mkdir F1 F2 F3
 ### Зайти в любую папку(F2):
 > cd F2
 ### Создать 5 файлов(text1.txt, text2.txt, text3.txt, json1.json, json2.json):
