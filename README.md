@@ -44,11 +44,13 @@ Bash commands and scripts
 ### Отправить http запрос на сервер
 ####http://162.55.220.72:5005/terminal-hw-request
          curl http://162.55.220.72:5005/terminal-hw-request
-#!/bin/bash /
-cd test
-mkdir f1 f2 f3
-cd f1
-touch file1.txt file2.txt file3.txt json1.json json2.json
-mkdir FoLdEr1 FoLdEr2 FoLdEr3
-ls -la
-mv {file1.txt,file2.txt} f2
+###  Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+        
+        #!/bin/bash /
+        cd test
+        mkdir f1 f2 f3
+        cd f1
+        touch file1.txt file2.txt file3.txt json1.json json2.json
+        mkdir FoLdEr1 FoLdEr2 FoLdEr3
+        ls -la
+        mv {file1.txt,file2.txt} f2
