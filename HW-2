@@ -11,27 +11,45 @@
     cd ../
     touch inner_dir_1/tf_1.txt
 ### 6) Находясь в папке dir_1 через команду cat создать текстовый файл tf_2.txt со следующими строками:
-    
-#### - the first 1
-#### - the second 2
-#### - the third 3
+    touch tf_1.txt
+    cat > tf_2.txt
+        the first 1
+        the second 2
+        the third 3
 ### 7) Зайти в папку inner_dir_1
+    cd inner_dir_1
 ### 8) С помощью cat создать текстовый файл tf_3.txt  c любыми строками
+    cat > tf_3.txt
 ### 9) С помощью cat cat добавить в текстовый файл tf_3.txt строку “the second 2”
+    echo "the second 2" >> tf_3.txt
 ### 10) Коммандой cat добавить в текстовый файл tf_3.txt строку “the sec 2”
+    echo "the sec 2" >> tf_3.txt
 ### 11) Коммандой cat добавить в текстовый файл tf_2.txt строку “the sec 3”
+    echo "the sec 3" >> ../tf_2.txt
 ### 12) Коммандой cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
+    echo "the SeCoNd 2" >> tf_3.txt
 ### 13) Коммандой cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
+    echo "the seConD 2" >> ../tf_2.txt
 ### 14) Создать текстовый файл tf_4.txt в котором будет 15 строк
+    for i in {1..15}; do echo "line $i" >> tf_4.txt; done
 ### 15) Сделать текстовый файл tF_5.txt в котором будет 13 строк
+    for i in {1..13}; do echo "line $i" >> tF_5.txt; done
 ### 16) Вывести список всех файлов в папке
+    ls -R
 ### 17) Выйти из папки inner_dir_1
+    cd ..
 ### 18) Вывести содержимое файла tf_3.txt в терминал
+    cat inner_dir_1/tf_3.txt
 ### 19) Найти путь к файлу tf_4.txt
+    find . -name "tf_4.txt" -type f -print
 ### 20) Очистить содержимое файла tf_4.txt без удаления самого файла
+    echo "" > tf_4.txt
 ### 21) Найти путь к файлам у которых есть  “tf” в названии
+    find . -name "*tf*" -type f -print
 ### 22) Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре
+    find . -iname "*tf*" -type f -print
 ### 23) Найти строки в файлах где есть комбинация букв “sec” в текущей папке
+    grep "sec" * --exclude-dir=inner_dir* --exclude-dir=.git* --exclude-dir=.idea* --exclude-dir=node_modules* --exclude-dir=venv* --exclude=task.sh* -nRi --color=always
 ### 24) Найти строки в файлах где есть комбинация букв “sec” в любом регистре в текущей папке
 ### 25) Найти строки в файлах где есть только комбинация букв “sec” в текущей папке
 ### 26) Найти строки в файлах где есть только комбинация букв “sec” в любом регистре в текущей папке
